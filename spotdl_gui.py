@@ -3,7 +3,6 @@
 from tkinter import *
 from tkinter import filedialog
 from random import randint, choice
-import string
 import os
 
 home_path = os.path.expanduser('~')
@@ -16,6 +15,8 @@ def browse_button():
 
 def download_music():
 
+    download_button["text"]="Téléchargement en cours..."
+    download_button.update()
     artist = str(artist_entry.get())
     album = str(album_entry.get())
     url = str(url_entry.get())
@@ -26,7 +27,11 @@ def download_music():
     artist_entry.delete(0, END)
     album_entry.delete(0, END)
     url_entry.delete(0, END)
-    
+    download_button["text"]="Téléchargement terminé"
+    download_button.update()
+    time.sleep(3)
+    download_button["text"]="Télécharger"
+    download_button.update()
     
 
 # Créer la fenêtre
