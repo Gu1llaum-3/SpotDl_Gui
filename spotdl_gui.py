@@ -4,6 +4,7 @@ from tkinter import *
 from tkinter import filedialog
 from random import randint, choice
 import os
+import time
 
 home_path = os.path.expanduser('~')
 
