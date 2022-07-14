@@ -85,8 +85,8 @@ url_entry.pack(fill=X)
 # Créer un bouton
 label_blanck = Label(right_frame, font=("Helvetica", 20), bg='#4065A4', fg='white', width=25, pady=5)
 label_blanck.pack()
-generate_password_button = Button(right_frame, text="Télécharger", font=("Helvetica", 20), bg='white', fg='#4065A4', command=download_music)
-generate_password_button.pack(fill=X)
+download_button = Button(right_frame, text="Télécharger", font=("Helvetica", 20), bg='white', fg='#4065A4', command=download_music)
+download_button.pack(fill=X)
 
 # On place la sous boite à droite de la frame principale
 right_frame.grid(row=0, column=1, sticky=W)
