@@ -38,10 +38,11 @@ def download_music():
 # Créer la fenêtre
 window = Tk()
 window.title("Spotdl")
-window.geometry("800x480")
+window.geometry("700x480")
 # window.iconbitmap(default="headphones.ico")
 window.config(background='#4065A4')
-window.minsize(800, 480)
+window.minsize(700, 480)
+window.maxsize(700, 480)
 
 # Créer frame principale
 frame = Frame(window, bg='#4065A4')
